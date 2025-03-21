@@ -45,8 +45,12 @@ struct ContentView: View {
                     self.gorunsunPopup = true
                     if self.username == "Deneme" && self.password == "1234567890" {
                         self.girisBasarili = true
+                        username = ""
+                        password = ""
                     }else{
                         self.girisBasarili = false
+                        username = ""
+                        password = ""
                     }
                 }, label: {
                     Text("login").padding(.all)
